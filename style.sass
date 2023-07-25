@@ -1,0 +1,387 @@
+
+.wrapper
+  height: 100%
+  max-width: 1440px
+  margin: 0 auto
+
+section
+  padding: 20px 60px
+
+.first_section
+  background: linear-gradient(to right, #000000 54%, #57B8FF 46%)
+.header
+  display: flex
+  justify-content: space-between
+  .header_burger
+    display: none
+  ul
+    display: flex
+    align-items: center
+    gap: 60px
+    color: #FFF
+    font-family: Orbitron
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 26px
+  div
+    display: flex
+    justify-content: space-between
+  button
+    margin-left: 20px
+    width: 178px
+    height: 62px
+    border: 1px solid #FFF
+    color: #FFFFFF
+    font-family: Orbitron
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: 30px
+
+.header_button_actvie
+  color: #FAC422
+.header_basket
+  position: relative
+  
+.header_basket_frame
+  align-self: start
+
+@media screen and (max-width: 1199px)
+  .header
+    ul
+      gap: 40px
+@media screen and (max-width: 1024px)
+  .header
+    ul
+      display: none
+    div
+      display: none
+    .header_burger
+      display: block
+      width: 30px
+
+.middle_block
+  margin: 209px auto
+  display: grid
+  grid-template-columns: 1fr 1fr
+  article
+    max-width: 660px
+    max-height: 528px
+    display: flex
+    flex-direction: column
+    span
+      display: flex
+      align-items: center
+      p
+        color: #57B8FF
+        font-family: Orbitron
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 16px
+        text-transform: uppercase
+
+    h1
+      margin: 24px 0 45px
+      color: #FFF
+      font-family: Orbitron
+      font-size: 72px
+      font-style: normal
+      font-weight: 400
+      line-height: 86px
+      text-transform: capitalize
+    h2
+      margin-bottom: 53px
+      color: #999
+      font-family: Orbitron
+      font-size: 18px
+      font-style: normal
+      font-weight: 400
+      line-height: 28px
+    div
+      display: flex
+      gap: 40px
+      button
+        background-color: #57B8FF
+        color: #FFF
+        font-family: Orbitron
+        font-size: 18px
+        font-style: normal
+        font-weight: 400
+        line-height: 28px
+        text-transform: capitalize
+        width: 203px
+        height: 70px
+      button:nth-child(2)
+        background-color: transparent
+
+
+@media screen and (max-width: 1199px)
+  .first_section
+    background: #000000
+  .middle_block
+    margin: 50px auto
+    grid-template-columns: 1fr
+    article
+      max-height: none
+    .middle_block_image
+      margin-top: 20px
+      justify-self: end
+
+@media screen and (max-width: 768px)
+  section
+   padding: 20px 30px !important
+  .first_section
+    .middle_block
+      article
+        justify-self: center
+        h1
+          font-size: 60px
+          line-height: 60px
+          text-align: center
+        h2
+          text-align: center
+        div
+          align-self: center
+          gap: 20px
+          button
+            font-size: 13px
+            width: 150px
+
+@media screen and (max-width: 599px)
+  .first_section
+    .middle_block
+      h1
+        font-size: 40px !important
+@media screen and (max-width: 379px)
+  section
+   padding: 20px 15px !important
+  .first_section
+    .middle_block
+      article
+        div
+          flex-direction: column
+
+
+
+.customize
+  padding: 0 60px
+  background-color: #2A313C
+  .middle_block_image_customize
+    height: 100%
+  div
+    margin: 0
+    gap: 128px
+  article
+    padding-top: 20px
+    max-height: none
+    align-self: center
+    h2
+      color: #FFF
+      font-family: Orbitron
+      font-size: 63px
+      font-style: normal
+      font-weight: 400
+      line-height: 74px /* 117.46% */
+      text-transform: capitalize
+    h3
+      color: rgba(223, 223, 223, 0.80)
+      font-family: Orbitron
+      font-size: 20px
+      font-style: normal
+      font-weight: 400
+      line-height: 30px
+      padding-right: 35px
+      margin-bottom: 54px
+  .customizeCharacter_block
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+  .select_image
+    border-radius: 20px
+    border: 6px solid #3B3D46
+@media screen and (max-width: 1199px)
+  .customize
+    .middle_block
+      gap: 20px
+      justify-items: center
+      img
+        object-fit: cover
+        order: 2
+        grid-gap: 0
+
+
+@media screen and (max-width: 768px)
+  .customize
+    padding-bottom: 0 !important
+
+
+@media screen and (max-width: 616px)
+  .customize
+    .middle_block
+      article
+        h2
+          text-align: center
+          font-size: 45px !important
+
+
+.news
+  display: flex
+  flex-direction: column
+  padding: 120px 60px 120px
+  gap: 68px
+  background-color: #000000
+  div
+    h2
+      color: #FFF
+      font-family: Orbitron
+      font-size: 64px
+      font-style: normal
+      font-weight: 400
+      line-height: 74px
+      text-transform: capitalize
+    span
+      margin-bottom: 22px
+      display: flex
+      align-items: center
+      color: #57B8FF
+      font-family: Orbitron
+      font-size: 16px
+      font-style: normal
+      font-weight: 400
+      line-height: 16px
+      text-transform: uppercase
+  .news_container
+    display: grid
+    grid-template-columns: 2fr 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-row-gap: 40px
+    grid-column-gap: 24px
+    .news_block
+      display: flex
+      max-width: 312px
+      max-height: 321px
+      flex-direction: column
+      h2
+        color: #FFF
+        font-family: Orbitron
+        font-size: 23px
+        font-style: normal
+        font-weight: 400
+        line-height: 46px
+        text-transform: capitalize
+      p
+        margin: 30px 0 20px
+        color: #57B8FF
+        font-family: Orbitron
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 16px
+
+    .news_block:nth-child(1)
+      max-width: 648px
+      max-height: 702px
+      grid-row-start: 1
+      grid-row-end: 4
+      p
+        margin: 54px 0 28px
+      img
+        border-radius: 12px
+        height: 100%
+        object-fit: cover
+@media screen and (max-width: 1199px)
+  .news_container
+    .news_block
+      h2
+        line-height: 30px !important
+        font-size: 19px!important
+
+@media screen and (max-width: 854px)
+  .news_container
+    .news_block:nth-child(1)
+      max-width: none !important
+      order: 1
+      grid-row-start: 1 !important
+      grid-row-end: 3 !important
+    .news_block
+      font-size: 15px !important
+      line-height: 15px !important
+
+
+@media screen and (max-width: 680px)
+  .news
+    div
+      h2
+        font-size: 45px !important
+        text-align: center
+
+    .news_container
+      display: flex !important
+      flex-direction: column
+      align-items: center
+      .news_block:nth-child(1)
+        order: 0!important
+      .news_block
+        p
+          text-align: center
+        h2
+          text-align: center
+
+@media screen and (max-width: 370px)
+  .news
+    div
+      h2
+        font-size: 40px !important
+        text-align: center
+
+.footer
+  display: flex
+  align-items: center
+  padding: 120px 60px 60px
+  gap: 150px
+  background-color: #222730
+  article
+    display: flex
+    flex-direction: column
+    gap: 35px
+    max-width: 289px
+    h2
+      color: #999
+      font-family: Orbitron
+      font-size: 15px
+      font-style: normal
+      font-weight: 400
+      line-height: 25px
+  .nav
+    h2
+      color: #FFF
+      font-family: Orbitron
+      font-size: 18px
+      font-style: normal
+      font-weight: 400
+      line-height: 30px
+      text-transform: capitalize
+    ul
+      display: flex
+      flex-direction: column
+      li
+        color: #999
+        font-family: Orbitron
+        font-size: 15px
+        font-style: normal
+        font-weight: 400
+        line-height: 37.5px
+        text-transform: capitalize
+@media screen and (max-width: 949px)
+  .footer
+    gap: 80px
+
+@media screen and (max-width: 822px)
+  .footer
+    padding: 60px 30px
+
+@media screen and (max-width: 768px)
+  .footer
+    align-items: start
+    flex-direction: column
