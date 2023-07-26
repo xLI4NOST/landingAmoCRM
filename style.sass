@@ -8,7 +8,52 @@ section
   padding: 20px 60px
 
 .first_section
+  position: relative
   background: linear-gradient(to right, #000000 54%, #57B8FF 46%)
+
+.sideBar
+  transform: rotate(270deg) translateX(-50%)
+  left: -115px
+  top: 380px
+  position: absolute
+  display: flex
+  gap: 45px
+  img
+    display: none
+  a
+    cursor: pointer
+    color: #80858F
+    font-family: Orbitron
+    font-size: 11px
+    font-style: normal
+    font-weight: 400
+    line-height: 25px
+
+@media screen and (max-width: 1199px)
+  .sideBar
+    left: -100px
+    gap: 30px
+    top: 180px
+
+
+@media screen and (max-width: 767px)
+  .sideBar
+    left: 0
+    gap: 30px
+    top: 50px
+    width: 200px
+    height: 200px
+    a
+      display: none
+    img
+
+      width: 40px
+      height: 15px
+      display: block
+
+
+
+
 .header
   display: flex
   justify-content: space-between
@@ -62,6 +107,7 @@ section
       width: 30px
 
 .middle_block
+  position: relative
   margin: 209px auto
   display: grid
   grid-template-columns: 1fr 1fr
